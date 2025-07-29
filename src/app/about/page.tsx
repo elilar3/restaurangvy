@@ -1,5 +1,37 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Om Oss - Restaurang Vy | Vår Historia & Kock Pierre Dubois',
+  description: 'Läs om Restaurang Vys historia från Paris till Stockholm. Träffa vår kock Pierre Dubois och upptäck vår filosofi för autentisk fransk matlagning.',
+  keywords: 'om restaurang vy, kock pierre dubois, fransk restaurang historia, le cordon bleu, michelin kock stockholm',
+  openGraph: {
+    title: 'Om Oss - Restaurang Vy | Vår Historia & Kock Pierre Dubois',
+    description: 'Läs om Restaurang Vys historia från Paris till Stockholm. Träffa vår kock Pierre Dubois och upptäck vår filosofi för autentisk fransk matlagning.',
+    type: 'website',
+    locale: 'sv_SE',
+    url: 'https://restaurangvy.se/about',
+    siteName: 'Restaurang Vy',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
+        width: 1200,
+        height: 630,
+        alt: 'Kock Pierre Dubois - Restaurang Vy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Om Oss - Restaurang Vy | Vår Historia & Kock Pierre Dubois',
+    description: 'Läs om Restaurang Vys historia från Paris till Stockholm. Träffa vår kock Pierre Dubois och upptäck vår filosofi för autentisk fransk matlagning.',
+    images: ['https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80'],
+  },
+  alternates: {
+    canonical: 'https://restaurangvy.se/about',
+  },
+};
 
 export default function About() {
   return (

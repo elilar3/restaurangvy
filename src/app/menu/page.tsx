@@ -1,5 +1,37 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Meny - Restaurang Vy | Autentisk Fransk Matlagning Stockholm',
+  description: 'Upptäck vår autentiska franska meny med klassiska rätter som Coq au Vin, Beef Bourguignon och Bouillabaisse. Vegetariska och glutenfria alternativ tillgängliga.',
+  keywords: 'fransk meny stockholm, coq au vin, beef bourguignon, bouillabaisse, vegetarisk fransk mat, glutenfri fransk mat',
+  openGraph: {
+    title: 'Meny - Restaurang Vy | Autentisk Fransk Matlagning Stockholm',
+    description: 'Upptäck vår autentiska franska meny med klassiska rätter som Coq au Vin, Beef Bourguignon och Bouillabaisse. Vegetariska och glutenfria alternativ tillgängliga.',
+    type: 'website',
+    locale: 'sv_SE',
+    url: 'https://restaurangvy.se/menu',
+    siteName: 'Restaurang Vy',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+        width: 1200,
+        height: 630,
+        alt: 'Fransk meny - Restaurang Vy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Meny - Restaurang Vy | Autentisk Fransk Matlagning Stockholm',
+    description: 'Upptäck vår autentiska franska meny med klassiska rätter som Coq au Vin, Beef Bourguignon och Bouillabaisse. Vegetariska och glutenfria alternativ tillgängliga.',
+    images: ['https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'],
+  },
+  alternates: {
+    canonical: 'https://restaurangvy.se/menu',
+  },
+};
 
 export default function Menu() {
   const menuSections = [

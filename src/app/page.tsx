@@ -1,6 +1,38 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Restaurang Vy - Autentisk Fransk Matlagning i Stockholm',
+  description: 'Upplev autentisk fransk matlagning i hjärtat av Stockholm. Traditionella bistro-rätter med en modern twist. Boka bord online för en oförglömlig middagsupplevelse.',
+  keywords: 'fransk restaurang stockholm, bistro, coq au vin, beef bourguignon, bouillabaisse, finmiddag, parisisk matlagning',
+  openGraph: {
+    title: 'Restaurang Vy - Autentisk Fransk Matlagning i Stockholm',
+    description: 'Upplev autentisk fransk matlagning i hjärtat av Stockholm. Traditionella bistro-rätter med en modern twist.',
+    type: 'website',
+    locale: 'sv_SE',
+    url: 'https://restaurangvy.se',
+    siteName: 'Restaurang Vy',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+        width: 1200,
+        height: 630,
+        alt: 'Restaurang Vy - Fransk bistro i Stockholm',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Restaurang Vy - Autentisk Fransk Matlagning i Stockholm',
+    description: 'Upplev autentisk fransk matlagning i hjärtat av Stockholm. Traditionella bistro-rätter med en modern twist.',
+    images: ['https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'],
+  },
+  alternates: {
+    canonical: 'https://restaurangvy.se',
+  },
+};
 
 export default function Home() {
   const featuredDishes = [
