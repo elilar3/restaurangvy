@@ -74,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="sv">
       <head>
-        <script type="module" src="https://menuscript-14000.firebaseapp.com/menuScript.js?id=UUUb1gA5k1xCb24iBOzl&menjuDev=true"></script>
+        <script type="module" src="https://script.menju.se/MenjuMenuScript.js?id=UUUb1gA5k1xCb24iBOzl&menjuDev=true"></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
